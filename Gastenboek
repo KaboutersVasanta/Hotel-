@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>📖 Gastenboek — Hotel Scoutingkamp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">🏨 Hotel Scoutingkamp</h1>
+      <nav class="main-nav" aria-label="Hoofdmenu">
+        <a href="index.html">🏨 Hotel</a>
+        <a href="incheck.html">🛎️ Inchecken</a>
+        <a href="over-ons.html">👥 Team</a>
+        <a href="vacatures.html">📋 Vacatures</a>
+        <a href="gastenboek.html">📖 Gastenboek</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Gastenboek — Kampdagboek</h2>
+      <p>Elke dag voegt de leiding handmatig een nieuw verhaal toe. Zet nieuwe dagen bovenaan (nieuwste eerst).</p>
+
+      <!--
+        Instructie voor leiding:
+        - Kopieer het volgende blok (class="dag") en plak bovenaan (direct onder deze comment).
+        - Pas Dagnummer, Titel en Verhaaltekst aan.
+        - Opslaan -> pagina toont nieuw dagverhaal meteen.
+      -->
+
+      <article class="dag">
+        <h3>Dag 3 — Het mysterie van de verdwenen sleutels</h3>
+        <p>Vandaag vonden de kinderen drie gouden sleutels verstopt in de tuin. De Schoonmaker bleek een kaart te hebben en leidde de speurtocht. Iedereen lachte en er waren koekjes als beloning.</p>
+      </article>
+
+      <article class="dag">
+        <h3>Dag 2 — Zwemwedstrijd en nattigheid</h3>
+        <p>Poolboy organiseerde een waterspel: de schoonmakers probeerden de meeste bekers water te scheppen zonder te morsen. Team blauw won met een natte vlag.</p>
+      </article>
+
+      <article class="dag">
+        <h3>Dag 1 — Aankomst en grote ontvangst</h3>
+        <p>De gasten werden verwelkomd door de Receptioniste met nep-sleutels en confetti. Het kamp is begonnen! Iedereen heeft zijn kamer bekeken en we sloten af met een kampvuur.</p>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© Hotel Scoutingkamp</small>
+    </div>
+  </footer>
+</body>
+</html>
