@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>📋 Vacatures — Hotel Scoutingkamp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">🏨 Hotel Scoutingkamp</h1>
+      <nav class="main-nav" aria-label="Hoofdmenu">
+        <a href="index.html">🏨 Hotel</a>
+        <a href="incheck.html">🛎️ Inchecken</a>
+        <a href="over-ons.html">👥 Team</a>
+        <a href="vacatures.html">📋 Vacatures</a>
+        <a href="gastenboek.html">📖 Gastenboek</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Vacatures (spel)</h2>
+      <p>Verkrijg rollen door taken uit te voeren tijdens het kamp. Rollen zijn tijdelijk en onderdeel van het spel.</p>
+
+      <h3>Open vacature</h3>
+      <article class="vacature">
+        <h4>🧹 Schoonmaker</h4>
+        <p>Verantwoordelijkheden: kamers netjes houden, bedden rechttrekken, glinsterprijs verdienen.</p>
+      </article>
+
+      <h3>Nog niet ingevulde rol</h3>
+      <article class="vacature open">
+        <h4>🌙 Nachtportier (open)</h4>
+        <p>Verantwoordelijkheid: ’s nachts op patrouille en luisteren naar spookverhalen (spannend!).</p>
+        <p class="muted">Leiding bepaalt wie de rol krijgt — maak er punten of beloningen aan vast.</p>
+      </article>
+
+      <p>Wil je meer rollen toevoegen? Kopieer eenvoudig een &lt;article class="vacature"&gt; en pas titel en tekst aan.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© Hotel Scoutingkamp</small>
+    </div>
+  </footer>
+</body>
+</html>
