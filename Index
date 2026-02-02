@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>🏨 Hotel Scoutingkamp — Welkom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">🏨 Hotel Scoutingkamp</h1>
+      <nav class="main-nav" aria-label="Hoofdmenu">
+        <a href="index.html">🏨 Hotel</a>
+        <a href="incheck.html">🛎️ Inchecken</a>
+        <a href="over-ons.html">👥 Team</a>
+        <a href="vacatures.html">📋 Vacatures</a>
+        <a href="gastenboek.html">📖 Gastenboek</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card hero">
+      <h2>Welkom in Hotel Scoutingkamp!</h2>
+      <p>Beste gasten (en toekomstige medewerkers), welkom in het leukste hotel dat nooit echt bestaat — behalve tijdens het kamp! 🌲🎒</p>
+      <ul>
+        <li>Thema: speel een hotelverhaal vol rollen en speurtochten</li>
+        <li>Doel: plezier, samenwerking en avontuur</li>
+        <li>Tip: kijk bij "Vacatures" voor rollen die je kunt verdienen</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3>Activiteiten</h3>
+      <p>We hebben speurtochten, spelletjes, knutselen en het grote hotelspel waarbij iedereen een rol kan vervullen. Kijk elke dag in het gastenboek voor het dagverhaal.</p>
+    </section>
+
+    <section class="card">
+      <h3>Hotelregels (kort)</h3>
+      <ol>
+        <li>We helpen elkaar — leiding is altijd aanwezig.</li>
+        <li>Speel fair en beleef plezier.</li>
+        <li>Geen echte boekingen — alles is spel.</li>
+      </ol>
+    </section>
+
+    <section class="card small">
+      <h3>Welkomsboodschap</h3>
+      <p>Leiding: schrijf hier je persoonlijke welkomsttekst of liedje.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© Hotel Scoutingkamp — Maak wijzigingen rechtstreeks in de HTML-bestanden. Geen accounts nodig.</small>
+    </div>
+  </footer>
+</body>
+</html>
