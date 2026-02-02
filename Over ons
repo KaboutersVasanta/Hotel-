@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>👥 Team — Hotel Scoutingkamp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">🏨 Hotel Scoutingkamp</h1>
+      <nav class="main-nav" aria-label="Hoofdmenu">
+        <a href="index.html">🏨 Hotel</a>
+        <a href="incheck.html">🛎️ Inchecken</a>
+        <a href="over-ons.html">👥 Team</a>
+        <a href="vacatures.html">📋 Vacatures</a>
+        <a href="gastenboek.html">📖 Gastenboek</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Ons Hotelteam</h2>
+      <p>De leiding speelt de volgende rollen — korte, grappige beschrijvingen zodat kinderen meteen kunnen meedoen.</p>
+
+      <div class="team-grid">
+        <article class="team-member">
+          <h3>👩‍🍳 Kok</h3>
+          <p>Maakt de gekste pannenkoeken en bewaakt het geheime recept (suikervrije kompaspoeder).</p>
+        </article>
+
+        <article class="team-member">
+          <h3>🏊 Poolboy</h3>
+          <p>Maakt het zwembad hilarisch ondiep en organiseert waterspelletjes (handdoeken klaar!).</p>
+        </article>
+
+        <article class="team-member">
+          <h3>🎺 Picollo</h3>
+          <p>Brengt borden en geheimzinnige belletjes rond — soms zingt hij de kamer wakker.</p>
+        </article>
+
+        <article class="team-member">
+          <h3>💁 Receptioniste</h3>
+          <p>Checkt gasten in en deelt sleutels uit — altijd vriendelijk, soms dramatisch.</p>
+        </article>
+
+        <article class="team-member">
+          <h3>🔧 Klusjesvrouw</h3>
+          <p>Repareert kapotte dromen, plakband en lampjes — vaak met een epische gereedschapsriem.</p>
+        </article>
+
+        <article class="team-member">
+          <h3>🧑‍💼 Manager</h3>
+          <p>Houdt het hotel overzichtelijk en verdeelt rollen — kan ook snoepstraffen uitdelen (met mate!).</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© Hotel Scoutingkamp</small>
+    </div>
+  </footer>
+</body>
+</html>
