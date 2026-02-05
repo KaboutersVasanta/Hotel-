@@ -3,49 +3,195 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>📖 Gastenboek — Hotel Scoutingkamp</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <title>Gastenboek — Hotel Aurora</title>
   <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Ervaringen van gasten bij Hotel Aurora — beoordelingen en verhalen.">
 </head>
 <body>
-  <header class="site-header">
+  <header class="header" id="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">🏨 Hotel Scoutingkamp</a>
-      <nav class="main-nav" aria-label="Hoofdmenu">
+      <div class="logo"><a href="index.html" style="color:inherit;text-decoration:none;">Hotel Aurora</a></div>
+      <nav class="nav" aria-label="Hoofdmenu">
         <a href="index.html">Home</a>
-        <a href="incheck.html">Inchecken</a>
-        <a href="over-ons.html">Team</a>
+        <a href="team.html">Ons team</a>
         <a href="vacatures.html">Vacatures</a>
         <a href="gastenboek.html">Gastenboek</a>
+        <a class="cta" href="vacatures.html" role="button">Beschikbaarheid</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="card">
-      <h2>Gastenboek — Kampdagboek</h2>
-      <p>Elke dag voegt de leiding handmatig een nieuw verhaal toe. Zet nieuwe dagen bovenaan (nieuwste eerst).</p>
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="kicker">Gastenboek</div>
+        <h2 style="margin-top:.5rem;">Ervaringen van onze gasten</h2>
+        <p class="prose" style="margin-top:1rem;">Lees wat gasten waarderen aan hun verblijf bij Hotel Aurora. Heeft u feedback? Voeg gerust een bericht toe — alle inzendingen verschijnen direct (frontend-only).</p>
 
-      <!-- Instructie voor leiding: kopieer een nieuw article.dag en plak bovenaan -->
-      <article class="dag">
-        <h3>Dag 3 — Het mysterie van de verdwenen sleutels</h3>
-        <p>Vandaag vonden de kinderen drie gouden sleutels verstopt in de tuin. De Schoonmaker bleek een kaart te hebben en leidde de speurtocht. Iedereen lachte en er waren koekjes als beloning.</p>
-      </article>
+        <!-- Controls -->
+        <div style="display:flex; gap:.75rem; align-items:center; margin-top:1rem;">
+          <label for="sort-select" class="sr-only">Sorteer op</label>
+          <select id="sort-select" onchange="renderReviews()" aria-label="Sorteer reviews">
+            <option value="recent">Meest recent</option>
+            <option value="rating">Hoogste waardering</option>
+          </select>
+          <div style="margin-left:auto; color:var(--color-muted);">Totaal reviews: <span id="total-count"></span></div>
+        </div>
 
-      <article class="dag">
-        <h3>Dag 2 — Zwemwedstrijd en nattigheid</h3>
-        <p>Poolboy organiseerde een waterspel: de schoonmakers probeerden de meeste bekers water te scheppen zonder te morsen. Team blauw won met een natte vlag.</p>
-      </article>
+        <!-- Reviews list -->
+        <div id="reviews-grid" class="grid three-up" style="margin-top:1rem;"></div>
 
+        <!-- Review form -->
+        <section style="margin-top:1.5rem;">
+          <h3>Review toevoegen</h3>
+          <form id="review-form" class="form" onsubmit="addReview(event)" style="max-width:720px; margin-top:1rem;">
+            <label for="rev-name">Naam</label>
+            <input id="rev-name" class="input" required placeholder="Voornaam en initiaal (bijv. Lisa V.)" />
+
+            <label for="rev-rating">Waardering</label>
+            <select id="rev-rating" class="input" required>
+              <option value="">Kies</option>
+              <option value="5">5 — Uitstekend</option>
+              <option value="4">4 — Zeer goed</option>
+              <option value="3">3 — Goed</option>
+              <option value="2">2 — Matig</option>
+              <option value="1">1 — Onvoldoende</option>
+            </select>
+
+            <label for="rev-text">Bericht</label>
+            <textarea id="rev-text" class="input" rows="4" required></textarea>
+
+            <div style="display:flex; gap:.75rem; margin-top:.5rem;">
+              <button class="button primary" type="submit">Plaats review</button>
+              <button class="btn-ghost" type="button" onclick="document.getElementById('review-form').reset();">Reset</button>
+            </div>
+
+            <div id="rev-feedback" aria-live="polite" style="margin-top:.5rem;"></div>
+          </form>
+        </section>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <small>© Hotel Scoutingkamp</small>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container" style="display:flex; gap:var(--space-lg); flex-wrap:wrap; align-items:flex-start; padding-top:1.25rem; padding-bottom:1.25rem;">
+      <div style="flex:1 1 360px;">
+        <h4 style="margin-top:0;">Hotel Aurora</h4>
+        <p style="margin:.25rem 0;">© 2026 Hotel Aurora</p>
+      </div>
+      <div style="flex:1 1 240px;">
+        <h5 style="margin:.25rem 0;">Snel naar</h5>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="team.html">Ons team</a></li>
+          <li><a href="vacatures.html">Vacatures</a></li>
+        </ul>
+      </div>
+      <div style="flex:1 1 240px;">
+        <h5 style="margin:.25rem 0;">Contact</h5>
+        <p style="margin:0;">info@hotel-aurora.example<br/>+31 20 123 4567</p>
+      </div>
     </div>
   </footer>
+
+  <script>
+    // Sticky header
+    (function(){
+      const header = document.getElementById('site-header');
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 10);
+      window.addEventListener('scroll', onScroll, {passive:true});
+      onScroll();
+    })();
+
+    // Initial reviews (8 samples)
+    let reviews = [
+      {name: 'Sofie B.', date: '2026-01-14', rating:5, text:'Prachtig verblijf: rustige ligging en uitstekende service. Ontbijt met lokale producten was hemels.'},
+      {name: 'Mark v.', date: '2026-01-10', rating:4, text:'Charmant hotel, fijne kamer en goede tips voor wandelroutes.'},
+      {name: 'Lieke K.', date: '2025-12-21', rating:5, text:'Perfecte combinatie van rust en kwaliteit. De spa is kleinschalig maar heel verzorgd.'},
+      {name: 'Tom J.', date: '2025-11-03', rating:4, text:'Heerlijk diner en vriendelijke staf. Parkeergelegenheid makkelijk.'},
+      {name: 'Eva P.', date: '2025-10-18', rating:5, text:'Rustige omgeving en warme ontvangst. We werden goed geholpen met uitstapjes.'},
+      {name: 'H. de V.', date: '2025-09-30', rating:4, text:'Fijne kamer en comfortabele bedden. Locatie ideaal voor wandelingen.'},
+      {name: 'M. S.', date: '2025-08-12', rating:5, text:'Een verborgen parel. Lokaal eten met karakter en persoonlijke service.'},
+      {name: 'Daan R.', date: '2025-07-02', rating:3, text:'Leuke plek maar het diner was iets aan de lange kant qua wachttijd.'}
+    ];
+
+    // Render reviews
+    function renderReviews(){
+      const grid = document.getElementById('reviews-grid');
+      const sort = document.getElementById('sort-select').value;
+      let list = [...reviews];
+
+      if(sort === 'recent'){
+        list.sort((a,b)=> new Date(b.date) - new Date(a.date));
+      } else if(sort === 'rating'){
+        list.sort((a,b)=> b.rating - a.rating || new Date(b.date) - new Date(a.date));
+      }
+
+      grid.innerHTML = '';
+      list.forEach(r => {
+        const el = document.createElement('article');
+        el.className = 'review card';
+        el.setAttribute('role','article');
+        // format date for display: if ISO-like (YYYY-MM-DD) convert to NL short format, else show as-is
+        let displayDate = r.date;
+        if(/^\d{4}-\d{2}-\d{2}$/.test(r.date)){
+          const d = new Date(r.date);
+          displayDate = d.toLocaleDateString('nl-NL', {day:'2-digit', month:'short', year:'numeric'});
+        }
+        el.innerHTML = `
+          <header style="display:flex; justify-content:space-between; align-items:center;">
+            <div>
+              <strong>${escapeHtml(r.name)}</strong>
+              <div style="color:var(--color-muted); font-size:.95rem;">${displayDate}</div>
+            </div>
+            <div class="stars" aria-label="Waardering: ${r.rating} van 5">${'★'.repeat(r.rating)}${'☆'.repeat(5-r.rating)}</div>
+          </header>
+          <p style="margin-top:.6rem;">${escapeHtml(r.text)}</p>
+        `;
+        grid.appendChild(el);
+      });
+
+      document.getElementById('total-count').textContent = reviews.length;
+    }
+
+    // Escape helper
+    function escapeHtml(text){
+      return text.replace(/[&<>"']/g, function(m){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[m]; });
+    }
+
+    // Add review (frontend-only)
+    function addReview(e){
+      e.preventDefault();
+      const name = document.getElementById('rev-name');
+      const rating = document.getElementById('rev-rating');
+      const text = document.getElementById('rev-text');
+      const fb = document.getElementById('rev-feedback');
+
+      if(!name.value.trim() || !rating.value || !text.value.trim()){
+        fb.style.color = 'crimson';
+        fb.textContent = 'Vul alle velden in aub.';
+        return;
+      }
+
+      const today = new Date();
+      const isoDate = today.toISOString().slice(0,10);
+
+      // Add at start to show new first if sorting 'recent'
+      reviews.unshift({
+        name: name.value.trim(),
+        date: isoDate,
+        rating: parseInt(rating.value,10),
+        text: text.value.trim()
+      });
+
+      fb.style.color = 'var(--color-deep-green)';
+      fb.textContent = 'Bedankt! Uw review is toegevoegd.';
+      document.getElementById('review-form').reset();
+      renderReviews();
+    }
+
+    // Initial render
+    renderReviews();
+  </script>
 </body>
 </html>
