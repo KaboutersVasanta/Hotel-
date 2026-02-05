@@ -7,13 +7,14 @@
 */
 
 document.addEventListener('DOMContentLoaded', function () {
+  const SCROLL_THRESHOLD = 8; // Pixels scrolled before header shadow appears
   const header = document.querySelector('.site-header');
   const revealItems = document.querySelectorAll('.reveal');
 
   // 1) Sticky header: toggle .scrolled
   const onScroll = () => {
     if (!header) return;
-    if (window.scrollY > 8) header.classList.add('scrolled');
+    if (window.scrollY > SCROLL_THRESHOLD) header.classList.add('scrolled');
     else header.classList.remove('scrolled');
   };
   window.addEventListener('scroll', onScroll, { passive: true });
