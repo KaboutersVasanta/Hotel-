@@ -4,194 +4,306 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Vacatures — Hotel Aurora</title>
-  <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Openstaande vacatures bij Hotel Aurora — word onderdeel van ons team in een groene, gastvrije omgeving.">
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Bekijk actuele vacatures bij Hotel Aurora — werken in hospitality, keuken en wellness.">
 </head>
 <body>
-  <header class="site-header">
+  <header class="header" id="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">Hotel Aurora</a>
-      <nav class="main-nav" aria-label="Hoofd navigatie">
+      <div class="logo"><a href="index.html" style="color:inherit;text-decoration:none;">Hotel Aurora</a></div>
+      <nav class="nav" aria-label="Hoofdmenu">
         <a href="index.html">Home</a>
         <a href="team.html">Ons team</a>
         <a href="vacatures.html">Vacatures</a>
         <a href="gastenboek.html">Gastenboek</a>
+        <a class="cta" href="#apply" role="button">Beschikbaarheid</a>
       </nav>
-      <a class="book-btn" href="vacatures.html">Bekijk vacatures</a>
     </div>
   </header>
 
-  <main class="container section">
-    <h1>Vacatures</h1>
-    <p class="lead">Wij zijn regelmatig op zoek naar betrokken collega’s. Hieronder een overzicht van onze huidige vacatures.</p>
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="kicker">Vacatures</div>
+        <h2 style="margin-top:.5rem;">Werken bij Hotel Aurora</h2>
+        <p class="prose" style="margin-top:1rem;">Wij zoeken betrokken collega's voor ons kleine, ervaren team. Interesse? Bekijk de vacatures en solliciteer direct via het formulier onderaan.</p>
 
-    <section class="jobs-grid">
-      <!-- Vacature 1 -->
-      <article class="job card">
-        <h3>Front Office Medewerker (parttime)</h3>
-        <p class="muted">Een gastvrije duizendpoot voor receptie en telefonie.</p>
+        <!-- Vacancy list -->
+        <div style="margin-top:1.25rem;">
+          <div class="vacancy">
+            <!-- Vacancy 1 -->
+            <div class="card" id="vac-1">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                  <h3 style="margin:0;">Front Office Medewerker</h3>
+                  <div class="meta">32-40 uur • Hotel Aurora</div>
+                </div>
+                <div><span class="badge">Parttime/Fulltime</span></div>
+              </div>
+              <p style="margin-top:.5rem;">Gastvrij, representatief en oplossingsgericht. Jij bent het eerste aanspreekpunt en draagt bij aan een warme ontvangst.</p>
+              <div style="display:flex; gap:.75rem; margin-top:.5rem; flex-wrap:wrap;">
+                <a class="button primary" href="#apply" onclick="prefillRole('Front Office Medewerker')">Solliciteer nu</a>
+                <a class="button ghost" href="#vac-1-desc">Lees meer</a>
+              </div>
 
-        <h4>Omschrijving</h4>
-        <p>Je verwelkomt gasten, verzorgt check-in / check-out en verzorgt telefoon- en e-mailverkeer. Je bent het visitekaartje van Aurora.</p>
+              <div id="vac-1-desc" style="margin-top:.75rem;">
+                <strong>Wat je gaat doen</strong>
+                <ul>
+                  <li>Ontvangen van gasten en afhandelen van check-ins/-outs.</li>
+                  <li>Reserveringen beheren en gasten adviseren over lokale activiteiten.</li>
+                  <li>Communicatie met housekeeping en keuken coördineren.</li>
+                </ul>
+                <strong>Wat we zoeken</strong>
+                <ul>
+                  <li>Goede communicatieve vaardigheden en gastvrije houding.</li>
+                  <li>Ervaring in front office of hospitality is een pre.</li>
+                  <li>Flexibele inzet, ook in het weekend.</li>
+                </ul>
+                <strong>Wat we bieden</strong>
+                <ul>
+                  <li>Marktconforme vergoeding en reiskostenregeling.</li>
+                  <li>Korting op verblijf en behandelingen in de spa.</li>
+                  <li>Een klein betrokken team met ontwikkelmogelijkheden.</li>
+                </ul>
+              </div>
+            </div>
 
-        <h4>Taken</h4>
-        <ul>
-          <li>Inchecken en uitchecken van gasten</li>
-          <li>Reserveringen beheren en communiceren met housekeeping</li>
-          <li>Gasten adviseren over lokale activiteiten</li>
-        </ul>
+            <!-- Vacancy 2 -->
+            <div class="card" id="vac-2">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                  <h3 style="margin:0;">Housekeeping (ochtend)</h3>
+                  <div class="meta">16-24 uur • Hotel Aurora</div>
+                </div>
+                <div><span class="badge">Ochtenddienst</span></div>
+              </div>
+              <p style="margin-top:.5rem;">Nauwkeurig en zorgzaam — je zorgt dat kamers en publieke ruimtes altijd opgeruimd en klaar zijn voor gasten.</p>
+              <div style="display:flex; gap:.75rem; margin-top:.5rem;">
+                <a class="button primary" href="#apply" onclick="prefillRole('Housekeeping (ochtend)')">Solliciteer nu</a>
+                <a class="button ghost" href="#vac-2-desc">Lees meer</a>
+              </div>
 
-        <h4>Wat wij bieden</h4>
-        <ul>
-          <li>Aantrekkelijke arbeidsvoorwaarden</li>
-          <li>Flexibele uren en een warm, betrokken team</li>
-          <li>Doorgroeimogelijkheden en opleidingsbudget</li>
-        </ul>
+              <div id="vac-2-desc" style="margin-top:.75rem;">
+                <strong>Wat je gaat doen</strong>
+                <ul>
+                  <li>Opruimen en schoonmaken van kamers volgens standaarden.</li>
+                  <li>Voorraad bijhouden en meldingen doorgeven aan leiding.</li>
+                  <li>Aandacht voor detail en gastcomfort.</li>
+                </ul>
+                <strong>Wat we zoeken</strong>
+                <ul>
+                  <li>Betrouwbaarheid en een hands-on mentaliteit.</li>
+                  <li>Ervaring is welkom maar geen vereiste.</li>
+                  <li>Goede beschikbaarheid in de ochtenduren.</li>
+                </ul>
+                <strong>Wat we bieden</strong>
+                <ul>
+                  <li>Aantrekkelijke werktijden en persoonlijke begeleiding.</li>
+                  <li>Een warme werkomgeving en eerlijk loon.</li>
+                </ul>
+              </div>
+            </div>
 
-        <div class="job-actions">
-          <button class="btn btn-primary apply-btn" data-title="Front Office Medewerker">Solliciteer nu</button>
-        </div>
-      </article>
+            <!-- Vacancy 3 -->
+            <div class="card" id="vac-3">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                  <h3 style="margin:0;">Chef de Partie</h3>
+                  <div class="meta">36 uur • Hotel Aurora</div>
+                </div>
+                <div><span class="badge">Keuken</span></div>
+              </div>
+              <p style="margin-top:.5rem;">Een zelfstandig werkende kok die passie heeft voor seizoensproducten en kwaliteitsbereiding.</p>
+              <div style="display:flex; gap:.75rem; margin-top:.5rem;">
+                <a class="button primary" href="#apply" onclick="prefillRole('Chef de Partie')">Solliciteer nu</a>
+                <a class="button ghost" href="#vac-3-desc">Lees meer</a>
+              </div>
 
-      <!-- Vacature 2 -->
-      <article class="job card">
-        <h3>Housekeeping Supervisor (fulltime)</h3>
-        <p class="muted">Leidinggevende in housekeeping met oog voor kwaliteitszorg.</p>
+              <div id="vac-3-desc" style="margin-top:.75rem;">
+                <strong>Wat je gaat doen</strong>
+                <ul>
+                  <li>Bereiden van gerechten volgens het seizoensmenu.</li>
+                  <li>Aansturen van sections en waarborgen van kwaliteit.</li>
+                  <li>Meedenken over menuontwikkeling.</li>
+                </ul>
+                <strong>Wat we zoeken</strong>
+                <ul>
+                  <li>Ervaring in een professionele keuken.</li>
+                  <li>Kennis van seizoensproducten en goede timing.</li>
+                  <li>Teamspeler met verantwoordelijkheidsgevoel.</li>
+                </ul>
+                <strong>Wat we bieden</strong>
+                <ul>
+                  <li>Een creatieve keuken met aandacht voor ontwikkeling.</li>
+                  <li>Vast salaris en maaltijdregeling.</li>
+                </ul>
+              </div>
+            </div>
 
-        <h4>Omschrijving</h4>
-        <p>Leiden van het housekeeping-team, kwaliteitscontroles en de planning van schoonmaakwerkzaamheden.</p>
+            <!-- Vacancy 4 -->
+            <div class="card" id="vac-4">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                  <h3 style="margin:0;">Wellness & Spa Host</h3>
+                  <div class="meta">24-32 uur • Hotel Aurora</div>
+                </div>
+                <div><span class="badge">Wellness</span></div>
+              </div>
+              <p style="margin-top:.5rem;">Ontvang gasten in de spa, draag bij aan een serene sfeer en ondersteun behandelingen.</p>
+              <div style="display:flex; gap:.75rem; margin-top:.5rem;">
+                <a class="button primary" href="#apply" onclick="prefillRole('Wellness & Spa Host')">Solliciteer nu</a>
+                <a class="button ghost" href="#vac-4-desc">Lees meer</a>
+              </div>
 
-        <h4>Taken</h4>
-        <ul>
-          <li>Aansturen en trainen van medewerkers</li>
-          <li>Voorraadbeheer schoonmaakmiddelen</li>
-          <li>Waarborgen van hygiënenormen</li>
-        </ul>
+              <div id="vac-4-desc" style="margin-top:.75rem;">
+                <strong>Wat je gaat doen</strong>
+                <ul>
+                  <li>Gasten ontvangen en begeleiden naar behandelingen.</li>
+                  <li>Ondersteunen bij lichte behandelingen en ontspanningsruimtes.</li>
+                  <li>Beheren van agenda en schoonmaken van ruimtes.</li>
+                </ul>
+                <strong>Wat we zoeken</strong>
+                <ul>
+                  <li>Representatief en rustig in omgang.</li>
+                  <li>Affiniteit met wellness en gastgericht werken.</li>
+                  <li>Flexibele werkhouding en nauwkeurigheid.</li>
+                </ul>
+                <strong>Wat we bieden</strong>
+                <ul>
+                  <li>Opleidingsmogelijkheden en ruimte voor specialisatie.</li>
+                  <li>Kortingen op behandelingen voor medewerkers.</li>
+                </ul>
+              </div>
+            </div>
 
-        <h4>Wat wij bieden</h4>
-        <ul>
-          <li>Fulltime dienstverband met marktconform salaris</li>
-          <li>Reiskostenvergoeding en pensioenregeling</li>
-          <li>Een prettige werkomgeving en professionele ondersteuning</li>
-        </ul>
+            <!-- Vacancy 5 -->
+            <div class="card" id="vac-5">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                  <h3 style="margin:0;">Events & Guest Experience Coördinator</h3>
+                  <div class="meta">32 uur • Hotel Aurora</div>
+                </div>
+                <div><span class="badge">Events</span></div>
+              </div>
+              <p style="margin-top:.5rem;">Organiseren van kleinschalige evenementen en zorgen dat gasten een bijzondere ervaring hebben tijdens bijeenkomsten of vieringen.</p>
+              <div style="display:flex; gap:.75rem; margin-top:.5rem;">
+                <a class="button primary" href="#apply" onclick="prefillRole('Events & Guest Experience Coördinator')">Solliciteer nu</a>
+                <a class="button ghost" href="#vac-5-desc">Lees meer</a>
+              </div>
 
-        <div class="job-actions">
-          <button class="btn btn-primary apply-btn" data-title="Housekeeping Supervisor">Solliciteer nu</button>
-        </div>
-      </article>
+              <div id="vac-5-desc" style="margin-top:.75rem;">
+                <strong>Wat je gaat doen</strong>
+                <ul>
+                  <li>Plannen en uitvoeren van evenementen en bijeenkomsten.</li>
+                  <li>Samenwerken met externe partners en leveranciers.</li>
+                  <li>Zorgdragen voor een persoonlijke gastbeleving.</li>
+                </ul>
+                <strong>Wat we zoeken</strong>
+                <ul>
+                  <li>Ervaring met events of hospitality.</li>
+                  <li>Goede organisatorische vaardigheden en klantgericht.</li>
+                  <li>Proactieve houding en hands-on mentaliteit.</li>
+                </ul>
+                <strong>Wat we bieden</strong>
+                <ul>
+                  <li>Ruimte voor eigen invulling en creatieve keuzes.</li>
+                  <li>Een betrokken team en marktconform salaris.</li>
+                </ul>
+              </div>
+            </div>
 
-      <!-- Vacature 3 -->
-      <article class="job card">
-        <h3>Allround Activiteitenbegeleider (seizoen)</h3>
-        <p class="muted">Begeleiden van outdooractiviteiten en workshops voor gasten.</p>
-
-        <h4>Omschrijving</h4>
-        <p>Organiseren en uitvoeren van groepsactiviteiten, begeleiden van wandelingen en samenwerken met lokale partners.</p>
-
-        <h4>Taken</h4>
-        <ul>
-          <li>Leiden van wandel- en fietstochten</li>
-          <li>Voorbereiden van workshops en materiaal</li>
-          <li>Contact onderhouden met lokale leveranciers</li>
-        </ul>
-
-        <h4>Wat wij bieden</h4>
-        <ul>
-          <li>Marktconforme vergoeding</li>
-          <li>Leuke werkomgeving in de natuur</li>
-          <li>Korting op verblijf en maaltijden</li>
-        </ul>
-
-        <div class="job-actions">
-          <button class="btn btn-primary apply-btn" data-title="Allround Activiteitenbegeleider">Solliciteer nu</button>
-        </div>
-      </article>
-    </section>
-
-    <!-- Modal (frontend-only sollicitatie) -->
-    <div id="apply-modal" class="modal" aria-hidden="true">
-      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-        <button class="modal-close" id="modal-close" aria-label="Sluiten">&times;</button>
-        <h2 id="modal-title">Solliciteren bij Hotel Aurora</h2>
-        <p id="modal-job" class="muted"></p>
-
-        <form id="apply-form">
-          <label>
-            Voor- en achternaam
-            <input type="text" name="name" required />
-          </label>
-
-          <label>
-            E-mail
-            <input type="email" name="email" required />
-          </label>
-
-          <label>
-            Motivatie (kort)
-            <textarea name="message" rows="4" required></textarea>
-          </label>
-
-          <div class="form-actions">
-            <button type="submit" class="btn btn-primary">Verstuur (frontend demo)</button>
-            <button type="button" class="btn btn-outline" id="modal-cancel">Annuleren</button>
           </div>
+        </div>
 
-          <p class="note muted">
-            Let op: dit is een frontend-demo. In een productiesysteem maakt u de sollicitaties over naar uw backend of ATS.
-          </p>
-        </form>
+        <!-- Sollicitatieformulier -->
+        <section id="apply" style="margin-top:1.5rem;">
+          <h3>Solliciteer direct</h3>
+          <p class="prose" style="margin-top:.5rem;">Vul onderstaand formulier in. Dit is een frontend-only formulier; bij succesvolle validatie tonen we een bevestiging.</p>
+
+          <form id="apply-form" class="form" style="margin-top:1rem; max-width:720px;" onsubmit="submitApplication(event)">
+            <label for="app-name">Naam</label>
+            <input id="app-name" class="input" required />
+
+            <label for="app-email">E-mail</label>
+            <input id="app-email" type="email" class="input" required />
+
+            <label for="app-role">Gewenste rol</label>
+            <input id="app-role" class="input" placeholder="Bijv. Front Office Medewerker" required />
+
+            <label for="app-message">Motivatie (kort)</label>
+            <textarea id="app-message" class="input" rows="5" required></textarea>
+
+            <div style="display:flex; gap:.75rem; margin-top:.5rem;">
+              <button class="button primary" type="submit">Verstuur sollicitatie</button>
+              <button class="btn-ghost" type="button" onclick="document.getElementById('apply-form').reset();">Reset</button>
+            </div>
+
+            <div id="apply-feedback" aria-live="polite" style="margin-top:.75rem;"></div>
+          </form>
+        </section>
       </div>
-    </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <h3>Hotel Aurora</h3>
-        <p>Rust & gastvrijheid.</p>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container" style="display:flex; gap:var(--space-lg); flex-wrap:wrap; align-items:flex-start; padding-top:1.25rem; padding-bottom:1.25rem;">
+      <div style="flex:1 1 360px;">
+        <h4 style="margin-top:0;">Hotel Aurora</h4>
+        <p style="margin:.25rem 0;">© 2026 Hotel Aurora</p>
+      </div>
+      <div style="flex:1 1 240px;">
+        <h5 style="margin:.25rem 0;">Snel naar</h5>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="team.html">Ons team</a></li>
+          <li><a href="gastenboek.html">Gastenboek</a></li>
+        </ul>
+      </div>
+      <div style="flex:1 1 240px;">
+        <h5 style="margin:.25rem 0;">Contact</h5>
+        <p style="margin:0;">info@hotel-aurora.example<br/>+31 20 123 4567</p>
       </div>
     </div>
   </footer>
 
   <script>
-    // Modal sollicitatie — frontend-only behaviour
-    const modal = document.getElementById('apply-modal');
-    const modalJob = document.getElementById('modal-job');
-    const modalTitle = document.getElementById('modal-title');
-    const closeBtn = document.getElementById('modal-close');
-    const cancelBtn = document.getElementById('modal-cancel');
-    const applyForm = document.getElementById('apply-form');
+    // Sticky header
+    (function(){
+      const header = document.getElementById('site-header');
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 10);
+      window.addEventListener('scroll', onScroll, {passive:true});
+      onScroll();
+    })();
 
-    function openModal(jobTitle) {
-      modalJob.textContent = jobTitle;
-      modal.setAttribute('aria-hidden', 'false');
-      modal.classList.add('open');
-      document.body.style.overflow = 'hidden';
+    // Prefill role when clicking "Solliciteer nu"
+    function prefillRole(role){
+      const roleInput = document.getElementById('app-role');
+      if(roleInput) roleInput.value = role;
+      // Smooth scroll to form
+      document.getElementById('apply').scrollIntoView({behavior:'smooth', block:'start'});
+      document.getElementById('app-name').focus();
     }
 
-    function closeModal() {
-      modal.setAttribute('aria-hidden', 'true');
-      modal.classList.remove('open');
-      document.body.style.overflow = '';
-      applyForm.reset();
+    // Simple client-side validation and fake success
+    function submitApplication(event){
+      event.preventDefault();
+      const name = document.getElementById('app-name');
+      const email = document.getElementById('app-email');
+      const role = document.getElementById('app-role');
+      const msg = document.getElementById('app-message');
+      const fb = document.getElementById('apply-feedback');
+
+      if(!name.value.trim() || !email.checkValidity() || !role.value.trim() || !msg.value.trim()){
+        fb.style.color = 'crimson';
+        fb.textContent = 'Controleer of alle velden correct zijn ingevuld.';
+        return;
+      }
+
+      fb.style.color = 'var(--color-deep-green)';
+      fb.textContent = 'Bedankt! Uw sollicitatie is ontvangen. We nemen snel contact op.';
+      // Reset form after a short delay
+      setTimeout(()=>{ document.getElementById('apply-form').reset(); }, 1200);
     }
-
-    document.querySelectorAll('.apply-btn').forEach(btn => {
-      btn.addEventListener('click', () => openModal(btn.dataset.title));
-    });
-
-    closeBtn.addEventListener('click', closeModal);
-    cancelBtn.addEventListener('click', closeModal);
-    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
-
-    applyForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      // Frontend-only feedback
-      const formData = new FormData(applyForm);
-      modalTitle.textContent = 'Bedankt voor je sollicitatie!';
-      modalJob.textContent = `We hebben je bericht ontvangen, ${formData.get('name')}.`;
-      // In echte implementatie: verzend naar backend/ATS.
-    });
   </script>
 </body>
 </html>
