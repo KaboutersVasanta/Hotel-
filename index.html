@@ -2,170 +2,395 @@
 <html lang="nl">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Hotel Aurora — Rust. Natuur. Comfort.</title>
-  <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Hotel Aurora — Een modern, warm boutique-hotel omringd door natuur. Comfort, gastvrijheid en rust in één.">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hotel Aurora — Luxe, Rust en Natuur</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  
+  <meta name="description" content="Hotel Aurora — Een professioneel boutique-hotel met uitzonderlijke service, comfort en rust midden in de natuur.">
 </head>
 <body>
-  <!-- Global site header / navigatie -->
+  
+  <!-- Site Header -->
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Hotel Aurora home">Hotel Aurora</a>
-      <nav class="main-nav" aria-label="Hoofd navigatie">
-        <a href="index.html">Home</a>
-        <a href="team.html">Ons team</a>
-        <a href="vacatures.html">Vacatures</a>
-        <a href="gastenboek.html">Gastenboek</a>
+    <div class="inner">
+      <a class="brand" href="index.html">
+        <span class="name">Hotel Aurora</span>
+        <span class="sub">Boutique Hotel</span>
+      </a>
+      
+      <nav class="site-nav" aria-label="Hoofdnavigatie">
+        <a href="#kamers">Kamers</a>
+        <a href="#faciliteiten">Faciliteiten</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <a class="book-btn" href="vacatures.html">Bekijk vacatures</a>
+      
+      <a class="btn" href="#reserveren">Reserveren</a>
     </div>
   </header>
 
-  <main>
-    <!-- Hero sectie -->
-    <section class="hero">
-      <!-- AI image placeholder
-           AI image prompt: photorealistic boutique hotel exterior at golden hour, surrounded by lush forest, natural materials (wood & stone), warm lighting, high-resolution photography, depth of field -->
-      <img class="hero-image" src="images/hero-ai.jpg" alt="Hotel Aurora, buitenaanzicht tussen bomen bij gouden uur — fotorealistische AI-afbeelding (placeholder)" />
+  <!-- Hero Section -->
+  <section class="hero container">
+    <div class="hero-card reveal">
+      <p class="kicker">Welkom bij Hotel Aurora</p>
+      <h1 class="h-display">Luxe, Rust en Natuur in Perfecte Harmonie</h1>
+      <p class="lead">
+        Ontdek een unieke ervaring in ons boutique-hotel, omringd door prachtige natuur.
+        Geniet van uitzonderlijke service, moderne comfort en een onvergetelijk verblijf.
+      </p>
+      <div style="display: flex; gap: 0.8rem; margin-top: 1.2rem;">
+        <a class="btn" href="#kamers">Bekijk Kamers</a>
+        <a class="btn secondary" href="#contact">Meer Info</a>
+      </div>
+    </div>
+  </section>
 
-      <div class="hero-content container">
-        <h1>Welkom bij Hotel Aurora</h1>
-        <p class="lead">
-          Midden in het groen, met service die voelt als thuis. Hotel Aurora is een boutique-hotel
-          gericht op rust, natuurbeleving en modern comfort — perfect voor ontspanning, korte citytrips en zakelijke verblijven.
+  <!-- Rooms Section -->
+  <section id="kamers" class="container" style="margin-top: var(--space-xl);">
+    <div class="reveal">
+      <p class="kicker center">Onze Kamers</p>
+      <h2 class="h1 center">Comfort & Stijl</h2>
+      <p class="center small" style="max-width: 600px; margin: var(--space-sm) auto var(--space-lg);">
+        Elke kamer is zorgvuldig ontworpen met oog voor detail, comfort en authenticiteit.
+      </p>
+    </div>
+
+    <div class="rooms-grid">
+      <!-- Room 1 -->
+      <article class="room-card reveal">
+        <img class="thumb" src="/images/room1.jpg" alt="Deluxe Kamer met Uitzicht" />
+        <div class="card-body">
+          <div style="display: flex; justify-content: space-between; align-items: start;">
+            <h3>Deluxe Kamer</h3>
+            <span class="badge">✦ Populair</span>
+          </div>
+          <p class="meta">Ruime kamer met kingsize bed, zithoek en privé balkon</p>
+          
+          <div class="info-grid" style="margin-top: auto;">
+            <div class="info-item">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+              </span>
+              <span class="small">2 personen</span>
+            </div>
+            <div class="info-item">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 10c-1.1 0-2 .9-2 2v3H5v-3c0-1.1-.9-2-2-2s-2 .9-2 2v5c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2v-5c0-1.1-.9-2-2-2zm-3-5H6C4.34 5 3 6.34 3 8v2h18V8c0-1.66-1.34-3-3-3z"/>
+                </svg>
+              </span>
+              <span class="small">35 m²</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div>
+            <div class="price">€129</div>
+            <div class="micro">per nacht</div>
+          </div>
+          <a class="btn secondary" href="#reserveren" style="font-size: 0.9rem; padding: 0.45rem 0.75rem;">Boek Nu</a>
+        </div>
+      </article>
+
+      <!-- Room 2 -->
+      <article class="room-card reveal">
+        <img class="thumb" src="/images/room2.jpg" alt="Wellness Suite" />
+        <div class="card-body">
+          <div style="display: flex; justify-content: space-between; align-items: start;">
+            <h3>Wellness Suite</h3>
+            <span class="badge">✨ Premium</span>
+          </div>
+          <p class="meta">Luxe suite met privé sauna, bubbelbad en panoramisch uitzicht</p>
+          
+          <div class="info-grid" style="margin-top: auto;">
+            <div class="info-item">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+              </span>
+              <span class="small">2-4 personen</span>
+            </div>
+            <div class="info-item">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 10c-1.1 0-2 .9-2 2v3H5v-3c0-1.1-.9-2-2-2s-2 .9-2 2v5c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2v-5c0-1.1-.9-2-2-2zm-3-5H6C4.34 5 3 6.34 3 8v2h18V8c0-1.66-1.34-3-3-3z"/>
+                </svg>
+              </span>
+              <span class="small">55 m²</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div>
+            <div class="price">€189</div>
+            <div class="micro">per nacht</div>
+          </div>
+          <a class="btn secondary" href="#reserveren" style="font-size: 0.9rem; padding: 0.45rem 0.75rem;">Boek Nu</a>
+        </div>
+      </article>
+
+      <!-- Room 3 -->
+      <article class="room-card reveal">
+        <img class="thumb" src="/images/lobby-ai.jpg" alt="Familie Kamer" />
+        <div class="card-body">
+          <div style="display: flex; justify-content: space-between; align-items: start;">
+            <h3>Familie Kamer</h3>
+            <span class="badge">👨‍👩‍👧‍👦 Familie</span>
+          </div>
+          <p class="meta">Ideaal voor gezinnen, met twee slaapkamers en speelruimte</p>
+          
+          <div class="info-grid" style="margin-top: auto;">
+            <div class="info-item">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+              </span>
+              <span class="small">4-6 personen</span>
+            </div>
+            <div class="info-item">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 10c-1.1 0-2 .9-2 2v3H5v-3c0-1.1-.9-2-2-2s-2 .9-2 2v5c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2v-5c0-1.1-.9-2-2-2zm-3-5H6C4.34 5 3 6.34 3 8v2h18V8c0-1.66-1.34-3-3-3z"/>
+                </svg>
+              </span>
+              <span class="small">48 m²</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div>
+            <div class="price">€159</div>
+            <div class="micro">per nacht</div>
+          </div>
+          <a class="btn secondary" href="#reserveren" style="font-size: 0.9rem; padding: 0.45rem 0.75rem;">Boek Nu</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Facilities Section -->
+  <section id="faciliteiten" class="container" style="margin-top: var(--space-xl);">
+    <div class="reveal">
+      <p class="kicker center">Faciliteiten</p>
+      <h2 class="h1 center">Alles voor Uw Comfort</h2>
+    </div>
+
+    <div class="info-grid reveal" style="margin-top: var(--space-lg);">
+      <div class="panel">
+        <div class="info-item">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+          </span>
+          <div>
+            <h3 class="h2">Gratis WiFi</h3>
+            <p class="small">Supersnel internet in het hele hotel</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="info-item">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+          </span>
+          <div>
+            <h3 class="h2">Restaurant</h3>
+            <p class="small">Haute cuisine met lokale ingrediënten</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="info-item">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+          </span>
+          <div>
+            <h3 class="h2">Spa & Wellness</h3>
+            <p class="small">Sauna, massages en behandelingen</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="info-item">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+          </span>
+          <div>
+            <h3 class="h2">Gratis Parkeren</h3>
+            <p class="small">Ruime parkeerplaats voor alle gasten</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="info-item">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+          </span>
+          <div>
+            <h3 class="h2">Fietsenverhuur</h3>
+            <p class="small">Verken de natuur op de fiets</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="info-item">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+          </span>
+          <div>
+            <h3 class="h2">24/7 Receptie</h3>
+            <p class="small">Altijd iemand voor u beschikbaar</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="reserveren" class="container" style="margin-top: var(--space-xl);">
+    <div class="panel reveal" style="max-width: 700px; margin: 0 auto; padding: var(--space-lg);">
+      <p class="kicker center">Reserveren</p>
+      <h2 class="h1 center">Boek Uw Verblijf</h2>
+      <p class="center small" style="margin-bottom: var(--space-lg);">
+        Vul onderstaand formulier in en wij nemen zo snel mogelijk contact met u op.
+      </p>
+
+      <form class="form" action="#" method="post">
+        <div class="input-row">
+          <div>
+            <label for="checkin" class="h2">Check-in</label>
+            <input type="date" id="checkin" name="checkin" required />
+          </div>
+          <div>
+            <label for="checkout" class="h2">Check-out</label>
+            <input type="date" id="checkout" name="checkout" required />
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div>
+            <label for="guests" class="h2">Aantal gasten</label>
+            <select id="guests" name="guests" required>
+              <option value="">Selecteer...</option>
+              <option value="1">1 persoon</option>
+              <option value="2">2 personen</option>
+              <option value="3">3 personen</option>
+              <option value="4">4 personen</option>
+              <option value="5+">5+ personen</option>
+            </select>
+          </div>
+          <div>
+            <label for="room-type" class="h2">Kamertype</label>
+            <select id="room-type" name="room-type" required>
+              <option value="">Selecteer...</option>
+              <option value="deluxe">Deluxe Kamer</option>
+              <option value="wellness">Wellness Suite</option>
+              <option value="family">Familie Kamer</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="name" class="h2">Naam</label>
+          <input type="text" id="name" name="name" placeholder="Uw naam" required />
+        </div>
+
+        <div>
+          <label for="email" class="h2">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="uw.email@voorbeeld.nl" required />
+        </div>
+
+        <div>
+          <label for="phone" class="h2">Telefoonnummer</label>
+          <input type="tel" id="phone" name="phone" placeholder="+31 6 12345678" />
+        </div>
+
+        <button type="submit" class="btn" style="width: 100%; justify-content: center; margin-top: var(--space-sm);">
+          Reservering Aanvragen
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container" style="margin-top: var(--space-xl);">
+    <div class="reveal">
+      <p class="kicker center">Contact</p>
+      <h2 class="h1 center">Neem Contact Op</h2>
+    </div>
+
+    <div class="footer-grid reveal" style="margin-top: var(--space-lg); max-width: 800px; margin-left: auto; margin-right: auto;">
+      <div class="panel">
+        <h3 class="h2">Adres</h3>
+        <p class="small">
+          Boslaan 12<br />
+          1234 AB Buitenplaats<br />
+          Nederland
         </p>
-        <div class="hero-ctas">
-          <a class="btn btn-primary" href="team.html">Ons team</a>
-          <a class="btn btn-outline" href="vacatures.html">Bekijk vacatures</a>
-          <a class="btn btn-ghost" href="gastenboek.html">Lees ervaringen</a>
-        </div>
       </div>
-    </section>
 
-    <!-- Over Hotel Aurora -->
-    <section class="container section about" id="over">
-      <div class="grid two-up">
-        <div>
-          <h2>Over Hotel Aurora</h2>
-          <p>
-            Hotel Aurora is een kleinschalig, modern hotel dat oog heeft voor duurzaamheid en beleving.
-            Onze kamers zijn ontworpen met natuurlijke materialen, veel licht en comfortabele bedden zodat gasten
-            elke ochtend fris ontwaken. We combineren professionele service met een warme, persoonlijke benadering.
-          </p>
-          <p>
-            Of u nu wilt wandelen in de omliggende natuur, zakelijke bijeenkomsten organiseert of gewoon wilt ontspannen bij onze
-            loungebar — bij Aurora staat gastvrijheid centraal.
-          </p>
-        </div>
-
-        <div class="card">
-          <!-- AI image placeholder
-               AI image prompt: inviting hotel lobby with natural materials, staff at reception smiling, warm beige tones, real photo style -->
-          <img src="images/lobby-ai.jpg" alt="Lobby van Hotel Aurora — warme, natuurlijke materialen (AI-placeholder)" />
-          <h3>Onze waarden</h3>
-          <ul>
-            <li>Gastvrijheid met aandacht</li>
-            <li>Duurzaam en lokaal</li>
-            <li>Rust, ruimte en kwaliteit</li>
-          </ul>
-        </div>
+      <div class="panel">
+        <h3 class="h2">Telefoon</h3>
+        <p class="small">
+          <a href="tel:+31123456789" style="color: var(--accent-600); text-decoration: none;">+31 12 345 6789</a>
+        </p>
       </div>
-    </section>
 
-    <!-- Faciliteiten & activiteiten -->
-    <section class="section facilities">
-      <div class="container">
-        <h2>Faciliteiten & activiteiten</h2>
-        <div class="grid three-up features">
-          <article class="feature card">
-            <!-- AI image placeholder
-                 AI image prompt: serene spa interior with natural wood, daylight, minimal styling, photorealistic -->
-            <img src="images/spa-ai.jpg" alt="Spa & wellness — fotorealistische AI-placeholder" />
-            <h4>Spa & Wellness</h4>
-            <p>Kleine spa met sauna, behandelruimtes en ontspanningslounge — ideaal na een dag in de natuur.</p>
-          </article>
-
-          <article class="feature card">
-            <!-- AI image placeholder
-                 AI image prompt: activity coordinator leading a forest walk, guests in outdoor clothing, natural light, realistic photo -->
-            <img src="images/activities-ai.jpg" alt="Activiteiten in de natuur — AI-placeholder" />
-            <h4>Activiteiten</h4>
-            <p>Geleide wandelingen, fietstochten en seizoensgebonden workshops (fotografie, koken met streekproducten).</p>
-          </article>
-
-          <article class="feature card">
-            <!-- AI image placeholder
-                 AI image prompt: cozy dining room in boutique hotel, wood table, soft blue accents, natural light, realistic photography -->
-            <img src="images/dining-ai.jpg" alt="Restaurant en ontbijt — AI-placeholder" />
-            <h4>Restaurant & Ontbijt</h4>
-            <p>Een seizoensgebonden menu met lokale ingrediënten, uitgebreid ontbijtbuffet en à-la-carte diner.</p>
-          </article>
-        </div>
+      <div class="panel">
+        <h3 class="h2">E-mail</h3>
+        <p class="small">
+          <a href="mailto:info@hotelaurora.nl" style="color: var(--accent-600); text-decoration: none;">info@hotelaurora.nl</a>
+        </p>
       </div>
-    </section>
-
-    <!-- Locatie & omgeving -->
-    <section class="container section location" id="locatie">
-      <div class="grid two-up">
-        <div>
-          <h2>Locatie & omgeving</h2>
-          <p>
-            Gelegen op een korte afstand van het nationale bosgebied en binnen 30 minuten van de dichtstbijzijnde stad.
-            Rondom het hotel vindt u wandelroutes, uitkijkpunten en kleinschalige producenten voor lokale proeverijen.
-          </p>
-          <p>
-            Gratis parkeerplaats en goede verbinding met openbaar vervoer — perfect als startpunt voor dagtochten.
-          </p>
-        </div>
-
-        <div class="map-card card">
-          <!-- AI image placeholder
-               AI image prompt: aerial view of boutique hotel near forest and lake, soft daylight, photorealistic -->
-          <img src="images/location-ai.jpg" alt="Omgeving van Hotel Aurora — AI-placeholder luchtfoto" />
-          <p class="muted">Bij aankomst ontvangt u bij de receptie een overzicht van wandelroutes en lokale tips.</p>
-        </div>
-      </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <h3>Hotel Aurora</h3>
-        <p>Rust, natuur en comfort — geopend het hele jaar.</p>
-        <address>
-          Boslaan 12<br />
-          1234 AB Buitenplaats<br />
-          Tel: <a href="tel:+31123456789">+31 12 345 6789</a>
-        </address>
-      </div>
-
-      <div>
-        <h4>Snelle links</h4>
-        <nav class="footer-nav">
-          <a href="team.html">Ons team</a>
-          <a href="vacatures.html">Vacatures</a>
-          <a href="gastenboek.html">Gastenboek</a>
-        </nav>
-      </div>
-
-      <div class="smallprint">
-        <p>&copy; 2026 Hotel Aurora — Alle rechten voorbehouden.</p>
+    <div class="container">
+      <div class="footer-grid center">
+        <div>
+          <p class="small">&copy; 2026 Hotel Aurora. Alle rechten voorbehouden.</p>
+        </div>
+        <div>
+          <nav style="display: flex; gap: var(--space-sm); justify-content: center;">
+            <a href="over-ons.html" class="small" style="color: var(--muted); text-decoration: none;">Over Ons</a>
+            <a href="vacatures.html" class="small" style="color: var(--muted); text-decoration: none;">Vacatures</a>
+            <a href="gastenboek.html" class="small" style="color: var(--muted); text-decoration: none;">Gastenboek</a>
+          </nav>
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- Lightweight JS: geen frameworks, alleen kleine interacties -->
-  <script>
-    // Smooth scroll for internal links (progressive enhancement)
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  </script>
+  <!-- JavaScript -->
+  <script src="/assets/js/app.js" defer></script>
+
 </body>
 </html>
