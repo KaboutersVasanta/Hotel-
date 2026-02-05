@@ -4,31 +4,37 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Hotel Aurora — Rust. Natuur. Comfort.</title>
-  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Google Fonts: Playfair Display for headings, Inter for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Professional stylesheet -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  
   <meta name="description" content="Hotel Aurora — Een modern, warm boutique-hotel omringd door natuur. Comfort, gastvrijheid en rust in één.">
 </head>
 <body>
   <!-- Global site header / navigatie -->
   <header class="site-header">
-    <div class="container header-inner">
+    <div class="header-inner">
       <a class="brand" href="index.html" aria-label="Hotel Aurora home">Hotel Aurora</a>
       <nav class="main-nav" aria-label="Hoofd navigatie">
         <a href="index.html">Home</a>
-        <a href="team.html">Ons team</a>
-        <a href="vacatures.html">Vacatures</a>
+        <a href="#over">Over Ons</a>
+        <a href="#kamers">Kamers</a>
+        <a href="#faciliteiten">Faciliteiten</a>
         <a href="gastenboek.html">Gastenboek</a>
       </nav>
-      <a class="book-btn" href="vacatures.html">Bekijk vacatures</a>
+      <a class="book-btn" href="incheck.html">Boek nu</a>
+      <!-- Mobile menu toggle will be added by JavaScript -->
     </div>
   </header>
 
   <main>
-    <!-- Hero sectie -->
+    <!-- Hero sectie met achtergrond uit /images/hero-ai.jpg -->
     <section class="hero">
-      <!-- AI image placeholder
-           AI image prompt: photorealistic boutique hotel exterior at golden hour, surrounded by lush forest, natural materials (wood & stone), warm lighting, high-resolution photography, depth of field -->
-      <img class="hero-image" src="images/hero-ai.jpg" alt="Hotel Aurora, buitenaanzicht tussen bomen bij gouden uur — fotorealistische AI-afbeelding (placeholder)" />
-
       <div class="hero-content container">
         <h1>Welkom bij Hotel Aurora</h1>
         <p class="lead">
@@ -36,15 +42,15 @@
           gericht op rust, natuurbeleving en modern comfort — perfect voor ontspanning, korte citytrips en zakelijke verblijven.
         </p>
         <div class="hero-ctas">
-          <a class="btn btn-primary" href="team.html">Ons team</a>
-          <a class="btn btn-outline" href="vacatures.html">Bekijk vacatures</a>
+          <a class="btn btn-primary" href="incheck.html">Boek uw verblijf</a>
+          <a class="btn btn-outline" href="#kamers">Bekijk kamers</a>
           <a class="btn btn-ghost" href="gastenboek.html">Lees ervaringen</a>
         </div>
       </div>
     </section>
 
     <!-- Over Hotel Aurora -->
-    <section class="container section about" id="over">
+    <section class="container section about reveal" id="over">
       <div class="grid two-up">
         <div>
           <h2>Over Hotel Aurora</h2>
@@ -59,7 +65,7 @@
           </p>
         </div>
 
-        <div class="card">
+        <div class="card reveal-right">
           <!-- AI image placeholder
                AI image prompt: inviting hotel lobby with natural materials, staff at reception smiling, warm beige tones, real photo style -->
           <img src="images/lobby-ai.jpg" alt="Lobby van Hotel Aurora — warme, natuurlijke materialen (AI-placeholder)" />
@@ -73,12 +79,65 @@
       </div>
     </section>
 
-    <!-- Faciliteiten & activiteiten -->
-    <section class="section facilities">
+    <!-- Kamers sectie -->
+    <section class="section rooms" id="kamers">
       <div class="container">
-        <h2>Faciliteiten & activiteiten</h2>
+        <h2 class="reveal">Onze kamers</h2>
+        <p class="lead reveal" style="text-align: center; margin-bottom: 3rem;">
+          Elke kamer is ontworpen met oog voor comfort en natuurlijke elegantie.
+        </p>
+        <div class="grid three-up">
+          <article class="room-card reveal">
+            <img src="images/spa-ai.jpg" alt="Comfort kamer — rustige ambiance met natuurlijk licht" />
+            <div class="room-card-content">
+              <h3>Comfort Kamer</h3>
+              <p>Ideaal voor korte verblijven. Deze comfortabele kamer biedt rust en functionaliteit.</p>
+              <div class="room-features">
+                <span>🛏️ 2 personen</span>
+                <span>🚿 Privé badkamer</span>
+                <span>📶 Gratis WiFi</span>
+              </div>
+              <div class="room-price">€95 / nacht</div>
+            </div>
+          </article>
+
+          <article class="room-card reveal">
+            <img src="images/dining-ai.jpg" alt="Deluxe kamer — ruime kamer met extra comfort" />
+            <div class="room-card-content">
+              <h3>Deluxe Kamer</h3>
+              <p>Extra ruimte en luxe. Perfect voor langere verblijven met zithoek en balkon.</p>
+              <div class="room-features">
+                <span>🛏️ 2 personen</span>
+                <span>🛋️ Zithoek</span>
+                <span>🌳 Balkon</span>
+              </div>
+              <div class="room-price">€135 / nacht</div>
+            </div>
+          </article>
+
+          <article class="room-card reveal">
+            <img src="images/location-ai.jpg" alt="Suite — luxe suite met panoramisch uitzicht" />
+            <div class="room-card-content">
+              <h3>Aurora Suite</h3>
+              <p>Onze meest luxueuze optie met panoramisch uitzicht over het bos en extra ruimte.</p>
+              <div class="room-features">
+                <span>🛏️ 4 personen</span>
+                <span>🛁 Bad & douche</span>
+                <span>🌄 Panorama</span>
+              </div>
+              <div class="room-price">€195 / nacht</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Faciliteiten & activiteiten -->
+    <section class="section facilities" id="faciliteiten">
+      <div class="container">
+        <h2 class="reveal">Faciliteiten & activiteiten</h2>
         <div class="grid three-up features">
-          <article class="feature card">
+          <article class="feature card reveal-scale">
             <!-- AI image placeholder
                  AI image prompt: serene spa interior with natural wood, daylight, minimal styling, photorealistic -->
             <img src="images/spa-ai.jpg" alt="Spa & wellness — fotorealistische AI-placeholder" />
@@ -86,7 +145,7 @@
             <p>Kleine spa met sauna, behandelruimtes en ontspanningslounge — ideaal na een dag in de natuur.</p>
           </article>
 
-          <article class="feature card">
+          <article class="feature card reveal-scale">
             <!-- AI image placeholder
                  AI image prompt: activity coordinator leading a forest walk, guests in outdoor clothing, natural light, realistic photo -->
             <img src="images/activities-ai.jpg" alt="Activiteiten in de natuur — AI-placeholder" />
@@ -94,7 +153,7 @@
             <p>Geleide wandelingen, fietstochten en seizoensgebonden workshops (fotografie, koken met streekproducten).</p>
           </article>
 
-          <article class="feature card">
+          <article class="feature card reveal-scale">
             <!-- AI image placeholder
                  AI image prompt: cozy dining room in boutique hotel, wood table, soft blue accents, natural light, realistic photography -->
             <img src="images/dining-ai.jpg" alt="Restaurant en ontbijt — AI-placeholder" />
@@ -106,7 +165,7 @@
     </section>
 
     <!-- Locatie & omgeving -->
-    <section class="container section location" id="locatie">
+    <section class="container section location reveal" id="locatie">
       <div class="grid two-up">
         <div>
           <h2>Locatie & omgeving</h2>
@@ -119,7 +178,7 @@
           </p>
         </div>
 
-        <div class="map-card card">
+        <div class="map-card card reveal-right">
           <!-- AI image placeholder
                AI image prompt: aerial view of boutique hotel near forest and lake, soft daylight, photorealistic -->
           <img src="images/location-ai.jpg" alt="Omgeving van Hotel Aurora — AI-placeholder luchtfoto" />
@@ -145,7 +204,8 @@
       <div>
         <h4>Snelle links</h4>
         <nav class="footer-nav">
-          <a href="team.html">Ons team</a>
+          <a href="#over">Over Ons</a>
+          <a href="#kamers">Kamers</a>
           <a href="vacatures.html">Vacatures</a>
           <a href="gastenboek.html">Gastenboek</a>
         </nav>
@@ -157,15 +217,7 @@
     </div>
   </footer>
 
-  <!-- Lightweight JS: geen frameworks, alleen kleine interacties -->
-  <script>
-    // Smooth scroll for internal links (progressive enhancement)
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  </script>
+  <!-- Professional interactive JavaScript -->
+  <script src="/assets/js/app.js" defer></script>
 </body>
 </html>
