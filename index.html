@@ -1,75 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Aurora</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hotel Aurora — Rust. Natuur. Comfort.</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Hotel Aurora — Een modern, warm boutique-hotel omringd door natuur. Comfort, gastvrijheid en rust in één.">
 </head>
 <body>
-
-<header>
-    <div class="logo">Aurora</div>
-    <nav>
-        <a href="#kamers">Kamers</a>
-        <a href="#faciliteiten">Faciliteiten</a>
-        <a href="#reserveren">Reserveren</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-        <h1>Hotel Aurora</h1>
-        <p>Luxe, rust en elegantie</p>
-        <a href="#reserveren" class="btn">Reserveer Nu</a>
+  <!-- Global site header / navigatie -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Hotel Aurora home">Hotel Aurora</a>
+      <nav class="main-nav" aria-label="Hoofd navigatie">
+        <a href="index.html">Home</a>
+        <a href="team.html">Ons team</a>
+        <a href="vacatures.html">Vacatures</a>
+        <a href="gastenboek.html">Gastenboek</a>
+      </nav>
+      <a class="book-btn" href="vacatures.html">Bekijk vacatures</a>
     </div>
-</section>
+  </header>
 
-<section id="kamers" class="section">
-    <h2>Onze Kamers</h2>
-    <div class="cards">
-        <div class="card">
-            <img src="images/room1.jpg" alt="Deluxe Kamer">
-            <h3>Deluxe Kamer</h3>
-            <p>Vanaf €110 per nacht</p>
-        </div>
-        <div class="card">
-            <img src="images/room2.jpg" alt="Aurora Suite">
-            <h3>Aurora Suite</h3>
-            <p>Vanaf €180 per nacht</p>
-        </div>
-    </div>
-</section>
+  <main>
+    <!-- Hero sectie -->
+    <section class="hero">
+      <!-- AI image placeholder
+           AI image prompt: photorealistic boutique hotel exterior at golden hour, surrounded by lush forest, natural materials (wood & stone), warm lighting, high-resolution photography, depth of field -->
+      <img class="hero-image" src="images/hero-ai.jpg" alt="Hotel Aurora, buitenaanzicht tussen bomen bij gouden uur — fotorealistische AI-afbeelding (placeholder)" />
 
-<section id="faciliteiten" class="split">
-    <img src="images/spa.jpg" alt="Spa">
-    <div class="text">
-        <h2>Wellness & Comfort</h2>
-        <p>
-            Geniet van onze spa, ontbijtservice, gratis Wi-Fi en 24/7 receptie.
-            Hotel Aurora staat voor ontspanning en kwaliteit.
+      <div class="hero-content container">
+        <h1>Welkom bij Hotel Aurora</h1>
+        <p class="lead">
+          Midden in het groen, met service die voelt als thuis. Hotel Aurora is een boutique-hotel
+          gericht op rust, natuurbeleving en modern comfort — perfect voor ontspanning, korte citytrips en zakelijke verblijven.
         </p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="team.html">Ons team</a>
+          <a class="btn btn-outline" href="vacatures.html">Bekijk vacatures</a>
+          <a class="btn btn-ghost" href="gastenboek.html">Lees ervaringen</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Over Hotel Aurora -->
+    <section class="container section about" id="over">
+      <div class="grid two-up">
+        <div>
+          <h2>Over Hotel Aurora</h2>
+          <p>
+            Hotel Aurora is een kleinschalig, modern hotel dat oog heeft voor duurzaamheid en beleving.
+            Onze kamers zijn ontworpen met natuurlijke materialen, veel licht en comfortabele bedden zodat gasten
+            elke ochtend fris ontwaken. We combineren professionele service met een warme, persoonlijke benadering.
+          </p>
+          <p>
+            Of u nu wilt wandelen in de omliggende natuur, zakelijke bijeenkomsten organiseert of gewoon wilt ontspannen bij onze
+            loungebar — bij Aurora staat gastvrijheid centraal.
+          </p>
+        </div>
+
+        <div class="card">
+          <!-- AI image placeholder
+               AI image prompt: inviting hotel lobby with natural materials, staff at reception smiling, warm beige tones, real photo style -->
+          <img src="images/lobby-ai.jpg" alt="Lobby van Hotel Aurora — warme, natuurlijke materialen (AI-placeholder)" />
+          <h3>Onze waarden</h3>
+          <ul>
+            <li>Gastvrijheid met aandacht</li>
+            <li>Duurzaam en lokaal</li>
+            <li>Rust, ruimte en kwaliteit</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Faciliteiten & activiteiten -->
+    <section class="section facilities">
+      <div class="container">
+        <h2>Faciliteiten & activiteiten</h2>
+        <div class="grid three-up features">
+          <article class="feature card">
+            <!-- AI image placeholder
+                 AI image prompt: serene spa interior with natural wood, daylight, minimal styling, photorealistic -->
+            <img src="images/spa-ai.jpg" alt="Spa & wellness — fotorealistische AI-placeholder" />
+            <h4>Spa & Wellness</h4>
+            <p>Kleine spa met sauna, behandelruimtes en ontspanningslounge — ideaal na een dag in de natuur.</p>
+          </article>
+
+          <article class="feature card">
+            <!-- AI image placeholder
+                 AI image prompt: activity coordinator leading a forest walk, guests in outdoor clothing, natural light, realistic photo -->
+            <img src="images/activities-ai.jpg" alt="Activiteiten in de natuur — AI-placeholder" />
+            <h4>Activiteiten</h4>
+            <p>Geleide wandelingen, fietstochten en seizoensgebonden workshops (fotografie, koken met streekproducten).</p>
+          </article>
+
+          <article class="feature card">
+            <!-- AI image placeholder
+                 AI image prompt: cozy dining room in boutique hotel, wood table, soft blue accents, natural light, realistic photography -->
+            <img src="images/dining-ai.jpg" alt="Restaurant en ontbijt — AI-placeholder" />
+            <h4>Restaurant & Ontbijt</h4>
+            <p>Een seizoensgebonden menu met lokale ingrediënten, uitgebreid ontbijtbuffet en à-la-carte diner.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Locatie & omgeving -->
+    <section class="container section location" id="locatie">
+      <div class="grid two-up">
+        <div>
+          <h2>Locatie & omgeving</h2>
+          <p>
+            Gelegen op een korte afstand van het nationale bosgebied en binnen 30 minuten van de dichtstbijzijnde stad.
+            Rondom het hotel vindt u wandelroutes, uitkijkpunten en kleinschalige producenten voor lokale proeverijen.
+          </p>
+          <p>
+            Gratis parkeerplaats en goede verbinding met openbaar vervoer — perfect als startpunt voor dagtochten.
+          </p>
+        </div>
+
+        <div class="map-card card">
+          <!-- AI image placeholder
+               AI image prompt: aerial view of boutique hotel near forest and lake, soft daylight, photorealistic -->
+          <img src="images/location-ai.jpg" alt="Omgeving van Hotel Aurora — AI-placeholder luchtfoto" />
+          <p class="muted">Bij aankomst ontvangt u bij de receptie een overzicht van wandelroutes en lokale tips.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h3>Hotel Aurora</h3>
+        <p>Rust, natuur en comfort — geopend het hele jaar.</p>
+        <address>
+          Boslaan 12<br />
+          1234 AB Buitenplaats<br />
+          Tel: <a href="tel:+31123456789">+31 12 345 6789</a>
+        </address>
+      </div>
+
+      <div>
+        <h4>Snelle links</h4>
+        <nav class="footer-nav">
+          <a href="team.html">Ons team</a>
+          <a href="vacatures.html">Vacatures</a>
+          <a href="gastenboek.html">Gastenboek</a>
+        </nav>
+      </div>
+
+      <div class="smallprint">
+        <p>&copy; 2026 Hotel Aurora — Alle rechten voorbehouden.</p>
+      </div>
     </div>
-</section>
+  </footer>
 
-<section id="reserveren" class="section dark">
-    <h2>Reserveer uw verblijf</h2>
-    <form>
-        <input type="text" placeholder="Naam" required>
-        <input type="email" placeholder="E-mail" required>
-        <input type="date" required>
-        <input type="date" required>
-        <button class="btn">Boek Nu</button>
-    </form>
-</section>
-
-<footer id="contact">
-    <p>Hotel Aurora · Bussum</p>
-    <p>info@hotelaurora.nl · +31 35 123 4567</p>
-</footer>
-
+  <!-- Lightweight JS: geen frameworks, alleen kleine interacties -->
+  <script>
+    // Smooth scroll for internal links (progressive enhancement)
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
 </body>
 </html>
