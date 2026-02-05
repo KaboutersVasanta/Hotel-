@@ -1,163 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Hotel Scoutingkamp — Welkom</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Aurora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path d="M3 21h18V7L12 2 3 7v14z" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linejoin="round"/>
-          <path d="M9 21V13h6v8" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linejoin="round"/>
-        </svg>
-        Hotel Scoutingkamp
-      </a>
-      <nav class="main-nav" aria-label="Hoofdmenu">
-        <a href="index.html">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5L12 4l9 7.5" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
-          Home
-        </a>
-        <a href="incheck.html">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v6" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M5 10h14v10H5z" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
-          Inchecken
-        </a>
-        <a href="over-ons.html">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="2" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M3 20c1.5-4 5-6 9-6s7.5 2 9 6" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
-          Team
-        </a>
-        <a href="vacatures.html">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="4" width="12" height="16" rx="2" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M9 8h6M9 12h6" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
-          Vacatures
-        </a>
-        <a href="gastenboek.html">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v12H8l-4 4V5z" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
-          Gastenboek
-        </a>
-      </nav>
+
+<header>
+    <div class="logo">Aurora</div>
+    <nav>
+        <a href="#kamers">Kamers</a>
+        <a href="#faciliteiten">Faciliteiten</a>
+        <a href="#reserveren">Reserveren</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1>Hotel Aurora</h1>
+        <p>Luxe, rust en elegantie</p>
+        <a href="#reserveren" class="btn">Reserveer Nu</a>
     </div>
-  </header>
+</section>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-content">
-          <h1>Welkom in Hotel Scoutingkamp</h1>
-          <p>Een speels kamphotel vol rollen, avonturen en herinneringen. Boek je verhaal en beleef het kamp als echte gast.</p>
-          <p class="hero-cta">
-            <a class="btn btn-primary" href="incheck.html">Inchecken (spel)</a>
-            <a class="btn btn-ghost" href="#rooms">Onze kamers</a>
-          </p>
+<section id="kamers" class="section">
+    <h2>Onze Kamers</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="images/room1.jpg" alt="Deluxe Kamer">
+            <h3>Deluxe Kamer</h3>
+            <p>Vanaf €110 per nacht</p>
         </div>
-
-        <aside class="booking-card" aria-label="Boek je verblijf">
-          <form class="fake-form" onsubmit="alert('Dit formulier is alleen voor de spelervaring — niet verzonden.'); return false;">
-            <label>Naam
-              <input type="text" name="naam" placeholder="Bijv. Sam" required>
-            </label>
-            <label>Kamertype
-              <select name="kamertype">
-                <option>Eenpersoonskamer</option>
-                <option>Tweepersoonskamer</option>
-                <option>Familiekamer</option>
-                <option>Suite</option>
-              </select>
-            </label>
-            <label>Aantal nachten
-              <input type="number" name="nachten" min="1" value="1">
-            </label>
-            <button type="submit" class="btn btn-primary">Reserveer je rol</button>
-            <p class="muted">Dit is een rollenspel — er wordt niets opgeslagen.</p>
-          </form>
-        </aside>
-      </div>
-    </section>
-
-    <section class="container intro">
-      <div class="grid cols-2">
-        <div>
-          <h2>Wat kun je verwachten?</h2>
-          <p>Speurtochten, rollen om te verdienen, creatieve opdrachten en heel veel plezier. Ons "hotel" is gemaakt voor samenwerken en avontuur in een veilige omgeving.</p>
-          <ul>
-            <li>Dagelijkse activiteiten en uitdagingen</li>
-            <li>Leuke rollen: Receptioniste, Kok, Poolboy en meer</li>
-            <li>Gastenboek met verhalen van elke dag</li>
-          </ul>
+        <div class="card">
+            <img src="images/room2.jpg" alt="Aurora Suite">
+            <h3>Aurora Suite</h3>
+            <p>Vanaf €180 per nacht</p>
         </div>
-        <div>
-          <h2>Waarom kiezen voor ons kamphotel?</h2>
-          <p>Het is speels, veilig en makkelijk te gebruiken door de leiding. Geen accounts nodig — wijzig HTML direct of laat de leiding bijhouden wat er gebeurt.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="rooms" class="container rooms">
-      <h2>
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h18" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
-        Onze Kamers
-      </h2>
-      <div class="grid room-grid">
-        <article class="room-card">
-          <h3>Eenpersoonskamer</h3>
-          <p>Perfect voor kleine avonturiers — knus en veilig.</p>
-        </article>
-        <article class="room-card">
-          <h3>Tweepersoonskamer</h3>
-          <p>Deel je kamer met een vriend en vergroot het speelplezier.</p>
-        </article>
-        <article class="room-card">
-          <h3>Familiekamer</h3>
-          <p>Grotere ruimte voor teams en gezinnen vol verhalen.</p>
-        </article>
-        <article class="room-card">
-          <h3>Suite</h3>
-          <p>Voor de grootste avonturiers die een episch verhaal willen spelen.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="container testimonials">
-      <h2>
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11h16v6H4z" stroke="currentColor" stride="1.6" fill="none"/></svg>
-        Gastenboek — hoogtepunten
-      </h2>
-      <div class="grid cols-3">
-        <blockquote class="testimonial">"De kinderen vonden het geweldig — een onvergetelijke dag!" — Leiding</blockquote>
-        <blockquote class="testimonial">"Super creatief en makkelijk te gebruiken tijdens het kamp." — Oudertevreden</blockquote>
-        <blockquote class="testimonial">"Iedereen wilde de rol van Poolboy!" — Kampchef</blockquote>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <strong>
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18V7L12 2 3 7v14z" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
-            Hotel Scoutingkamp
-          </strong>
-          <p class="muted">Maak wijzigingen rechtstreeks in de HTML-bestanden. Geen accounts nodig.</p>
-        </div>
-        <div>
-          <nav aria-label="Sitemap">
-            <a href="index.html">Home</a>
-            <a href="incheck.html">Inchecken</a>
-            <a href="over-ons.html">Team</a>
-            <a href="vacatures.html">Vacatures</a>
-          </nav>
-        </div>
-      </div>
-      <small>© Hotel Scoutingkamp</small>
     </div>
-  </footer>
+</section>
+
+<section id="faciliteiten" class="split">
+    <img src="images/spa.jpg" alt="Spa">
+    <div class="text">
+        <h2>Wellness & Comfort</h2>
+        <p>
+            Geniet van onze spa, ontbijtservice, gratis Wi-Fi en 24/7 receptie.
+            Hotel Aurora staat voor ontspanning en kwaliteit.
+        </p>
+    </div>
+</section>
+
+<section id="reserveren" class="section dark">
+    <h2>Reserveer uw verblijf</h2>
+    <form>
+        <input type="text" placeholder="Naam" required>
+        <input type="email" placeholder="E-mail" required>
+        <input type="date" required>
+        <input type="date" required>
+        <button class="btn">Boek Nu</button>
+    </form>
+</section>
+
+<footer id="contact">
+    <p>Hotel Aurora · Bussum</p>
+    <p>info@hotelaurora.nl · +31 35 123 4567</p>
+</footer>
+
 </body>
 </html>
