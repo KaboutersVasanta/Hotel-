@@ -16,7 +16,7 @@
         <a href="team.html">Ons team</a>
         <a href="vacatures.html">Vacatures</a>
         <a href="gastenboek.html">Gastenboek</a>
-        <a class="cta" href="vacatures.html" role="button">Beschikbaarheid</a>
+        <a class="cta" href="beschikbaarheid.html" role="button">Beschikbaarheid</a>
       </nav>
     </div>
   </header>
@@ -132,7 +132,6 @@
         const el = document.createElement('article');
         el.className = 'review card';
         el.setAttribute('role','article');
-        // format date for display: if ISO-like (YYYY-MM-DD) convert to NL short format, else show as-is
         let displayDate = r.date;
         if(/^\d{4}-\d{2}-\d{2}$/.test(r.date)){
           const d = new Date(r.date);
