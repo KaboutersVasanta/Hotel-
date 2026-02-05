@@ -358,7 +358,6 @@ a:hover {
   overflow: hidden;
   background: linear-gradient(135deg, rgba(31, 138, 89, 0.9), rgba(22, 105, 63, 0.8)), 
               url('/images/hero-ai.jpg') center/cover no-repeat;
-  background-attachment: fixed;
 }
 
 .hero::before {

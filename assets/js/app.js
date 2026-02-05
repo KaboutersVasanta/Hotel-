@@ -14,7 +14,6 @@
     const header = document.querySelector('.site-header');
     if (!header) return;
 
-    let lastScroll = 0;
     const scrollThreshold = 50;
 
     function updateHeader() {
@@ -25,8 +24,6 @@
       } else {
         header.classList.remove('scrolled');
       }
-
-      lastScroll = currentScroll;
     }
 
     // Throttle scroll events for performance
@@ -165,9 +162,10 @@
   // ============================================
   function ensureMobileMenuButton() {
     const header = document.querySelector('.site-header .header-inner');
+    const mainNav = document.querySelector('.main-nav');
     const existingToggle = document.querySelector('.mobile-toggle');
     
-    if (!header || existingToggle) return;
+    if (!header || !mainNav || existingToggle) return;
     
     // Create mobile menu toggle button
     const mobileToggle = document.createElement('button');
@@ -176,9 +174,12 @@
     mobileToggle.setAttribute('aria-expanded', 'false');
     mobileToggle.textContent = '☰';
     
-    // Insert before the last child (book button) or at the end
-    const lastChild = header.lastElementChild;
-    header.insertBefore(mobileToggle, lastChild);
+    // Insert after the navigation element
+    if (mainNav.nextSibling) {
+      header.insertBefore(mobileToggle, mainNav.nextSibling);
+    } else {
+      header.appendChild(mobileToggle);
+    }
   }
 
   // ============================================
@@ -225,12 +226,7 @@
     console.log('✓ Hotel Aurora interactive features loaded');
   }
 
-  // Run initialization
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    // DOM is already loaded
-    init();
-  }
+  // Run initialization when DOM is ready (defer attribute ensures this)
+  init();
 
 })();
