@@ -3,59 +3,105 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>👥 Team — Hotel Scoutingkamp</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <title>Ons team — Hotel Aurora</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Maak kennis met het team van Hotel Aurora — professionele medewerkers met passie voor gastvrijheid.">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">🏨 Hotel Scoutingkamp</a>
-      <nav class="main-nav" aria-label="Hoofdmenu">
+      <a class="brand" href="index.html">Hotel Aurora</a>
+      <nav class="main-nav" aria-label="Hoofd navigatie">
         <a href="index.html">Home</a>
-        <a href="incheck.html">Inchecken</a>
-        <a href="over-ons.html">Team</a>
+        <a href="team.html">Ons team</a>
         <a href="vacatures.html">Vacatures</a>
         <a href="gastenboek.html">Gastenboek</a>
       </nav>
+      <a class="book-btn" href="vacatures.html">Bekijk vacatures</a>
     </div>
   </header>
 
-  <main class="container">
-    <section class="card">
-      <h2>Ons Hotelteam</h2>
-      <p>De leiding speelt de volgende rollen — korte, grappige beschrijvingen zodat kinderen meteen kunnen meedoen.</p>
+  <main class="container section">
+    <h1>Ons team</h1>
+    <p class="lead">Een klein, toegewijd team met jaren ervaring in hospitality, gastronomie en beleving.</p>
 
-      <div class="team-grid">
-        <article class="team-member">
-          <h3>👩‍🍳 Kok</h3>
-          <p>Maakt de gekste pannenkoeken en bewaakt het geheime recept.</p>
-        </article>
+    <section class="team-grid">
+      <!-- Teamlid 1 -->
+      <article class="team-card card">
+        <!-- AI image placeholder
+             AI image prompt: portrait of female hotel manager, professional attire, warm smile, natural background, photorealistic -->
+        <img src="images/team-anna-ai.jpg" alt="Anna de Vries — Hotelmanager (AI-placeholder)" class="team-photo" />
+        <div class="team-info">
+          <h3>Anna de Vries</h3>
+          <p class="role">Hotelmanager</p>
+          <p class="bio">
+            Anna leidt Hotel Aurora met focus op gastbeleving en duurzaamheid. Met meer dan 12 jaar ervaring in boutique-hotels
+            zorgt zij voor een persoonlijke en efficiënte service.
+          </p>
+        </div>
+      </article>
 
-        <article class="team-member">
-          <h3>🏊 Poolboy</h3>
-          <p>Organiseert waterspelletjes en houdt toezicht.</p>
-        </article>
+      <!-- Teamlid 2 -->
+      <article class="team-card card">
+        <!-- AI image placeholder
+             AI image prompt: male guest relations manager portrait, friendly and professional, realistic photo -->
+        <img src="images/team-lucas-ai.jpg" alt="Lucas van Rijn — Hoofd Gastbeleving (AI-placeholder)" class="team-photo" />
+        <div class="team-info">
+          <h3>Lucas van Rijn</h3>
+          <p class="role">Hoofd Gastbeleving</p>
+          <p class="bio">
+            Lucas ontwikkelt unieke ervaringen voor gasten, van culinaire proeverijen tot buitenactiviteiten.
+            Zijn achtergrond in toerisme brengt lokale kennis en creativiteit samen.
+          </p>
+        </div>
+      </article>
 
-        <article class="team-member">
-          <h3>🎺 Picollo</h3>
-          <p>Helpt met bestellingen en geluidseffecten — altijd vrolijk.</p>
-        </article>
+      <!-- Teamlid 3 -->
+      <article class="team-card card">
+        <!-- AI image placeholder
+             AI image prompt: female chef portrait in kitchen, warm tones, realistic photography -->
+        <img src="images/team-sara-ai.jpg" alt="Sara Molen — Chef-kok (AI-placeholder)" class="team-photo" />
+        <div class="team-info">
+          <h3>Sara Molen</h3>
+          <p class="role">Chef-kok</p>
+          <p class="bio">
+            Sara werkt met lokale producenten en bereidt seizoensgebonden gerechten met een moderne touch. Haar menu is
+            uitnodigend en altijd in balans.
+          </p>
+        </div>
+      </article>
 
-        <article class="team-member">
-          <h3>💁 Receptioniste</h3>
-          <p>Checkt gasten in en deelt sleutels uit.</p>
-        </article>
+      <!-- Teamlid 4 -->
+      <article class="team-card card">
+        <!-- AI image placeholder
+             AI image prompt: activity coordinator portrait outdoors, friendly, realistic photograph -->
+        <img src="images/team-pieter-ai.jpg" alt="Pieter Jansen — Activiteitencoördinator (AI-placeholder)" class="team-photo" />
+        <div class="team-info">
+          <h3>Pieter Jansen</h3>
+          <p class="role">Activiteitencoördinator</p>
+          <p class="bio">
+            Pieter organiseert wandelingen, fietstochten en workshops. Hij kent alle routes in de omgeving en stemt
+            activiteiten af op de wensen van onze gasten.
+          </p>
+        </div>
+      </article>
+    </section>
 
-      </div>
+    <section class="cta-row">
+      <a class="btn btn-primary" href="vacatures.html">Bekijk vacatures — Sluit je aan bij ons team</a>
+      <a class="btn btn-outline" href="gastenboek.html">Lees wat gasten zeggen</a>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <small>© Hotel Scoutingkamp</small>
+    <div class="container footer-inner">
+      <div>
+        <h3>Hotel Aurora</h3>
+        <p>Rust, natuur en comfort.</p>
+      </div>
+      <div class="smallprint">
+        <p>&copy; 2026 Hotel Aurora</p>
+      </div>
     </div>
   </footer>
 </body>
