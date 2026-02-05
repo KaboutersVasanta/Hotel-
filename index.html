@@ -4,56 +4,130 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>🏨 Hotel Scoutingkamp — Welkom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <h1 class="brand">🏨 Hotel Scoutingkamp</h1>
+      <a class="brand" href="index.html">🏨 Hotel Scoutingkamp</a>
       <nav class="main-nav" aria-label="Hoofdmenu">
-        <a href="index.html">🏨 Hotel</a>
-        <a href="incheck.html">🛎️ Inchecken</a>
-        <a href="over-ons.html">👥 Team</a>
-        <a href="vacatures.html">📋 Vacatures</a>
-        <a href="gastenboek.html">📖 Gastenboek</a>
+        <a href="index.html">Home</a>
+        <a href="incheck.html">Inchecken</a>
+        <a href="over-ons.html">Team</a>
+        <a href="vacatures.html">Vacatures</a>
+        <a href="gastenboek.html">Gastenboek</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="card hero">
-      <h2>Welkom in Hotel Scoutingkamp!</h2>
-      <p>Beste gasten (en toekomstige medewerkers), welkom in het leukste hotel dat nooit echt bestaat — behalve tijdens het kamp! 🌲🎒</p>
-      <ul>
-        <li>Thema: speel een hotelverhaal vol rollen en speurtochten</li>
-        <li>Doel: plezier, samenwerking en avontuur</li>
-        <li>Tip: kijk bij "Vacatures" voor rollen die je kunt verdienen</li>
-      </ul>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Welkom in Hotel Scoutingkamp</h1>
+          <p>Een speels kamphotel vol rollen, avonturen en herinneringen. Boek je verhaal en beleef het kamp als echte gast.</p>
+          <p class="hero-cta">
+            <a class="btn btn-primary" href="incheck.html">Inchecken (spel)</a>
+            <a class="btn btn-ghost" href="#rooms">Onze kamers</a>
+          </p>
+        </div>
+
+        <aside class="booking-card" aria-label="Boek je verblijf">
+          <form class="fake-form" onsubmit="alert('Dit formulier is alleen voor de spelervaring — niet verzonden.'); return false;">
+            <label>Naam
+              <input type="text" name="naam" placeholder="Bijv. Sam" required>
+            </label>
+            <label>Kamertype
+              <select name="kamertype">
+                <option>Eenpersoonskamer</option>
+                <option>Tweepersoonskamer</option>
+                <option>Familiekamer</option>
+                <option>Suite</option>
+              </select>
+            </label>
+            <label>Aantal nachten
+              <input type="number" name="nachten" min="1" value="1">
+            </label>
+            <button type="submit" class="btn btn-primary">Reserveer je rol</button>
+            <p class="muted">Dit is een rollenspel — er wordt niets opgeslagen.</p>
+          </form>
+        </aside>
+      </div>
     </section>
 
-    <section class="card">
-      <h3>Activiteiten</h3>
-      <p>We hebben speurtochten, spelletjes, knutselen en het grote hotelspel waarbij iedereen een rol kan vervullen. Kijk elke dag in het gastenboek voor het dagverhaal.</p>
+    <section class="container intro">
+      <div class="grid cols-2">
+        <div>
+          <h2>Wat kun je verwachten?</h2>
+          <p>Speurtochten, rollen om te verdienen, creatieve opdrachten en heel veel plezier. Ons "hotel" is gemaakt voor samenwerken en avontuur in een veilige omgeving.</p>
+          <ul>
+            <li>Dagelijkse activiteiten en uitdagingen</li>
+            <li>Leuke rollen: Receptioniste, Kok, Poolboy en meer</li>
+            <li>Gastenboek met verhalen van elke dag</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Waarom kiezen voor ons kamphotel?</h2>
+          <p>Het is speels, veilig en makkelijk te gebruiken door de leiding. Geen accounts nodig — wijzig HTML direct of laat de leiding bijhouden wat er gebeurt.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="card">
-      <h3>Hotelregels (kort)</h3>
-      <ol>
-        <li>We helpen elkaar — leiding is altijd aanwezig.</li>
-        <li>Speel fair en beleef plezier.</li>
-        <li>Geen echte boekingen — alles is spel.</li>
-      </ol>
+    <section id="rooms" class="container rooms">
+      <h2>Onze Kamers</h2>
+      <div class="grid room-grid">
+        <article class="room-card">
+          <h3>Eenpersoonskamer</h3>
+          <p>Perfect voor kleine avonturiers — knus en veilig.</p>
+        </article>
+        <article class="room-card">
+          <h3>Tweepersoonskamer</h3>
+          <p>Deel je kamer met een vriend en vergroot het speelplezier.</p>
+        </article>
+        <article class="room-card">
+          <h3>Familiekamer</h3>
+          <p>Grotere ruimte voor teams en families vol verhalen.</p>
+        </article>
+        <article class="room-card">
+          <h3>Suite</h3>
+          <p>Voor de grootste avonturiers die een episch verhaal willen spelen.</p>
+        </article>
+      </div>
     </section>
 
-    <section class="card small">
-      <h3>Welkomsboodschap</h3>
-      <p>Leiding: schrijf hier je persoonlijke welkomsttekst of liedje.</p>
+    <section class="container testimonials">
+      <h2>Gastenboek — hoogtepunten</h2>
+      <div class="grid cols-3">
+        <blockquote class="testimonial">"De kinderen vonden het geweldig — een onvergetelijke dag!" — Leiding</blockquote>
+        <blockquote class="testimonial">"Super creatief en makkelijk te gebruiken tijdens het kamp." — Oudertevreden</blockquote>
+        <blockquote class="testimonial">"Iedereen wilde de rol van Poolboy!" — Kampchef</blockquote>
+      </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <small>© Hotel Scoutingkamp — Maak wijzigingen rechtstreeks in de HTML-bestanden. Geen accounts nodig.</small>
+      <div class="footer-grid">
+        <div>
+          <strong>🏨 Hotel Scoutingkamp</strong>
+          <p class="muted">Maak wijzigingen rechtstreeks in de HTML-bestanden. Geen accounts nodig.</p>
+        </div>
+        <div>
+          <nav aria-label="Sitemap">
+            <a href="index.html">Home</a>
+            <a href="incheck.html">Inchecken</a>
+            <a href="over-ons.html">Team</a>
+            <a href="vacatures.html">Vacatures</a>
+          </nav>
+        </div>
+      </div>
+      <small>© Hotel Scoutingkamp</small>
     </div>
   </footer>
 </body>
